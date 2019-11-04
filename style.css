@@ -1,0 +1,30 @@
+#container {
+	box-sizing: border-box;
+	background-color: lightblue;
+	width: 1200px;
+}
+#calculator {
+	display: flex;
+	width: 800px;
+	background-color: grey;
+	flex-wrap: wrap;
+	flex-direction: column;
+
+}
+.numbers {
+	/*display: flex;*/
+	width: 500px;
+	background-color: magenta;
+	/*flex-wrap: wrap;*/
+	/*flex-direction: column;*/
+}
+
+.opeartors {
+	display: flex;
+	flex-direction: column;
+}
+button {
+	width: 80px;
+	margin: 10px;
+	
+} 
