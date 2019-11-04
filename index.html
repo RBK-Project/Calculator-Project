@@ -13,10 +13,10 @@
 <body>
 <div id='container'>
  <h1>Project</h1>
- <div id='calculator'>
- 	<div class='numbers'>
+ <div class='calculator'>
+ 	
  	<div class= 'row-1'>
- 		<button id='one'>1</button>
+ 		<button id='one'>1</button> 
  		<button id='two'>2</button>
  		<button id='three'>3</button>
  	</div>
@@ -39,8 +39,24 @@
 			<button id="multiply">*</button>
 			<button id="divide">/</button>
 	 	</div>
+	 	<p>result:</p>
  </div>
  	
 </div>
+
+<p id="p1">1</p>
+<p id="p2">2</p>
+ 
+<script>
+	var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+$('#one').on('click',function(){
+	var $one; 
+	$one = numbers[1];
+	$('#one').val() = $one ;
+	console.log($one)
+	alert('click  ' + $one);
+});
+// $( "p" ).last().html( str );
+</script>
 </body>
 </html>

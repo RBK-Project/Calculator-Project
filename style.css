@@ -3,28 +3,22 @@
 	background-color: lightblue;
 	width: 1200px;
 }
-#calculator {
+.calculator {
 	display: flex;
-	width: 800px;
-	background-color: grey;
 	flex-wrap: wrap;
-	flex-direction: column;
-
+	flex-direction: row;
+	background-color: blue;	
 }
-.numbers {
-	/*display: flex;*/
-	width: 500px;
-	background-color: magenta;
-	/*flex-wrap: wrap;*/
-	/*flex-direction: column;*/
-}
-
-.opeartors {
-	display: flex;
-	flex-direction: column;
-}
-button {
-	width: 80px;
+.calculator > div {
+	width: 150px;	
+	background-color: grey;
 	margin: 10px;
-	
-} 
+	/*height: 400px;*/
+}
+/*.row-1, .row-2, .row-3 , .operators {
+	background-color: blue;
+	width: 150px;
+	height: 250px;
+	margin: 10px;
+	box-sizing: border-box; 
+}*/
