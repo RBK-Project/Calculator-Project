@@ -77,12 +77,23 @@
 // $('#plus').on('click',function(){
 	
 // });
-
+/*Equal sign button
+on('click', function(){
+if (operator === +){
+return before + after;
+}
+})
+*/
 
 var before = 0;
 var after;
 var operator;
-
+//operator btn +,-,*,/
+$('.operator').on('click', function(){
+var before = $('#result).text()
+var operator = $(this).html();
+$('#result').append(operator);
+}
 
 $('#one').on('click',function(){
 	$('#result').append($('#one').text());
