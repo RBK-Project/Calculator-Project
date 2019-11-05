@@ -2,10 +2,10 @@
 
 /*  Numbers of array sign to button  */
 var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-var operaters = ['+','-','*','/'];
 var number1;
 var number2;
 var op;
+var switche = false;
 $(document).ready(function() {  
 
 $('#one').on('click',function(){
@@ -25,7 +25,7 @@ $('#three').on('click',function(){
 	$three = numbers[3];
 	$('.result').append($three);
 });
-
+//
 $('#four').on('click',function(){
 	var $four = $('#four').val();
 	$four = numbers[4];
@@ -70,16 +70,15 @@ $('#zero').on('click',function(){
 
 $('#clear').on('click',function(){
 	$('.result').text('');
-	$('.result').show();
+
 });
 
 /* Operaters action   */
- // var operaters = ['+','-','*','/'];
+ 
 
 /* Plus operaters */
 $('#plus').on('click',function(){
 	var $plus = $('#plus').val();
-	$plus = operaters[0];
 	number1 = $('.result').text();
 	op = 'sum';
 	$('.result').append($plus);
@@ -90,57 +89,69 @@ $('#plus').on('click',function(){
 // -
 $('#minus').on('click',function(){
 	var $minus = $('#minus').val();
-	$minus = operaters[1];
-	number1 = $('.result').text();
-	op = 'minus';
-	$('.result').append($minus);
-	$('.result').text('');
+	
+	 number1 = $('.result').text();
+	 op = 'minus';
+	 
+	 $('.result').text('');
+	 
 });
 
 // *  
 $('#mult').on('click',function(){
-	var $mult = $('#mult').val();
-	$mult = operaters[2];
-	number1 = $('.result').text();
-	op = 'mult';
-	$('.result').append($mult);
-	$('.result').text('');
+	  var $mult = $('#mult').val();
+	  number1 = $('.result').text();
+	  op = 'mult';
+	  $('.result').text('');
 });
 // / 
 
 $('#divid').on('click',function(){
-	var $divid = $('#divid').val();
-	$divid = operaters[3];
 	number1 = $('.result').text();
 	op = 'divid';
-	$('.result').append($divid);
-	$('.result').text('');
+    $('.result').text('');
 });
 
-$('#equl').on('click', function(){
-	// $('.result').empty();
-	// $('.value').
+//  %
+ $('#percentage').on('click', function(){
+ 	number1 = $('.result').text();
+    var total =  parseInt(number1) / 100;
+  	$('.result').text(total);
+ })
+
+ $('#sign').on('click', function() {
+ 	number1 = $('.result').text();
+ 	number1  =   parseInt(number1) * -1;
+	 $('.result').text(number1);
+ })
+
+ $('#equal').on('click', function(){
 	var total = 0;
 	number2 = $('.result').text();
 	console.log(number1, number2);
 	if(op === 'sum'){
 		total = parseInt(number1) + parseInt(number2);
 	}
-	$('.result').text(total)
 	if(op === 'minus') {
 		total = parseInt(number1) - parseInt(number2);
-	}
-	$('.result').text(total);
+	};
 	if(op === 'mult') {
 		total = parseInt(number1) * parseInt(number2);
-	}
-	$('.result').text(total);
+	};
 	if(op === 'divid') {
+		if(parseInt(number2) === 0) {
+		 total = Error; 
+		}
 		total = parseInt(number1) / parseInt(number2);
-	}
-	$('.result').text(total);
+	   }
+     if(op === 'percentage') {
+     	
+     }
+      $('.result').text(total)
+     });
+     
 
-});
+
 
  
 
