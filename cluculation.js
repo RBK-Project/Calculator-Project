@@ -7,9 +7,16 @@ var number2;
 var op;
 var switche = false;
 $(document).ready(function() {  
-
+	$('.calculator').hide();
+	$('#icon').on('click', function(){
+		$('#icon').fadeOut(900);
+		$('.calculator').fadeIn(2300);
+		// $('#menu').fadeIn(1800); creates the menu.
+	})
 $('button').on('click', function(){
 	$(this).fadeOut(100).fadeIn(120);
+	$('button').css('box-shadow','inset 0 0 0px 0px white');
+	$(this).css('box-shadow','inset 0 0 8px 2px white');
 })
 $('#one').on('click',function(){
 	var $one = $('#one').val();
