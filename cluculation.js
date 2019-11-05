@@ -3,7 +3,6 @@
 /*  Numbers of array sign to button  */
 var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var operaters = ['+','-','*','/'];
-var result ;
 var number1;
 var number2;
 var op;
@@ -71,6 +70,7 @@ $('#zero').on('click',function(){
 
 $('#clear').on('click',function(){
 	$('.result').text('');
+	$('.result').show();
 });
 
 /* Operaters action   */
@@ -97,34 +97,49 @@ $('#minus').on('click',function(){
 	$('.result').text('');
 });
 
-// *
+// *  
 $('#mult').on('click',function(){
 	var $mult = $('#mult').val();
 	$mult = operaters[2];
+	number1 = $('.result').text();
+	op = 'mult';
 	$('.result').append($mult);
+	$('.result').text('');
 });
 // / 
 
 $('#divid').on('click',function(){
 	var $divid = $('#divid').val();
 	$divid = operaters[3];
+	number1 = $('.result').text();
+	op = 'divid';
 	$('.result').append($divid);
+	$('.result').text('');
 });
 
 $('#equl').on('click', function(){
 	// $('.result').empty();
 	// $('.value').
-	var res = 0;
+	var total = 0;
 	number2 = $('.result').text();
 	console.log(number1, number2);
 	if(op === 'sum'){
-		res = parseInt(number1) + parseInt(number2);
+		total = parseInt(number1) + parseInt(number2);
 	}
-	$('.result').text(res)
+	$('.result').text(total)
 	if(op === 'minus') {
-		res = parseInt(number1) - parseInt(number2);
+		total = parseInt(number1) - parseInt(number2);
 	}
-	$('.result').text(res);
+	$('.result').text(total);
+	if(op === 'mult') {
+		total = parseInt(number1) * parseInt(number2);
+	}
+	$('.result').text(total);
+	if(op === 'divid') {
+		total = parseInt(number1) / parseInt(number2);
+	}
+	$('.result').text(total);
+
 });
 
  
