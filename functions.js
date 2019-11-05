@@ -1,8 +1,7 @@
-function add(number1, number2) {
-	return number1 + number2 ;
+function add(num1, num2) {
+	 var a = num1;
+	 var b = num1
+	 var total = a + b;
+	 return total;
 }
 
-$('button').on('click', function(){
-  number1 = $('button').val();
-   if()
-});
