@@ -11,7 +11,13 @@ body {
 .calculator {
 	display: flex;
 	flex-direction: column;
-	background-color: blue;	
+	background-color: #1f1f4d;	
+    width: 47%;
+    align-items: center;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 25px;
 }
 
 #fixed-result{
@@ -26,6 +32,11 @@ button {
 	padding: 10px;
 	margin: 4px;
 	width: 120px;
+	margin-top: 10px;
+	background-color: #1f1f4d;
+}
+button:hover {
+
 }
 
 #picture {
@@ -43,7 +54,7 @@ button {
 	font-size: 60px;
 }
 .operater {
-	color:#DF2935;
+	color:#cc8822;
 	font-size: 60px;
 
 }
