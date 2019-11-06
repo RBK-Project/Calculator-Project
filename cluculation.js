@@ -6,9 +6,15 @@ var number1;
 var number2;
 var op;
 var switche = false;
+var quotes = [];//we'll copy paste quotes here.
 $(document).ready(function() {  
+
+var $quote =Math.floor (Math.random() * 5); 
+$('.quote').append(quotes[$quote];
+
 	$('.calculator').hide();
 	$('#icon').on('click', function(){
+                $('.quote').hide();
 		$('#icon').fadeOut(900);
 		$('.calculator').fadeIn(2300);
 		// $('#menu').fadeIn(1800); creates the menu.
