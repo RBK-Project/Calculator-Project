@@ -1,0 +1,83 @@
+/*  style for all body    */
+ body {
+	 background-image: url(images.jpeg);
+	 background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+}
+
+
+/*  flexibal box for Calculators by column  */
+ .calculator {
+	display: flex;
+	flex-direction: column;
+    width: 38%;
+    align-items: center;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+}
+
+/* edit result of operaters with adding another div */
+ #fixed-result{
+	width : 520px;
+	height: 100px;
+	background-color: white;
+	border: 1px solid; 
+	border-radius: 20px;
+ }
+
+/*  Select All button   */
+ button {
+	padding: 10px;
+	margin: 4px;
+	width: 120px;
+	margin-top: 10px;
+	background-color: #232222;
+ }
+
+
+/*  button style for Numbers  */
+.value {
+	font-size: 60px;
+	color: white;
+	text-align: center;
+ }
+
+
+/*  button style for operaters  */
+.operater {
+	color: #f41212;
+	font-size: 60px;
+
+ }
+/*  resulting box of mathic  */
+.result {
+	margin-top: 5px; 
+	width : 200px;
+	background-color: #FFFFFF00;
+	color: black;
+	font-size: 40px;
+	padding-left: 15px;
+    padding-top: 10px;
+	border-style: 1px solid #0075F2;
+ }
+/*  radius for all buttons  */
+ .value, .operater {
+ 	border-radius: 20px;
+ }
+
+
+/* Width bigger than another  */
+ #zero {
+    width: 255px;
+ }
+
+
+
+
+
+
+
+
