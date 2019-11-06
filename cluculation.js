@@ -19,6 +19,15 @@ $('.quote').append(quotes[$quote];
 		$('.calculator').fadeIn(2300);
 		// $('#menu').fadeIn(1800); creates the menu.
 	})
+/*input age to calculates in sec/mins
+$('#ageConfirm').on('clicl', function(){
+  var $age = $('input').text();//better global.
+  $('').text() = ('');
+  
+
+}
+
+*/
 $('button').on('click', function(){
 	$(this).fadeOut(100).fadeIn(120);
 	$('button').css('box-shadow','inset 0 0 0px 0px white');
