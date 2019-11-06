@@ -4,12 +4,18 @@
 var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var number1;
 var number2;
+var cm;
 var op;
 var switche = false; // switch between 
 $(document).ready(function() {  
+// $('#convert').on('click', function(){
+// 	$('input').html()
+// })
 // design for fade .. 
 $('button').on('click', function(){
 	$(this).fadeOut(100).fadeIn(120);
+	$('button').css('box-shadow','inset 0 0 0px 0px grey');
+	$(this).css('box-shadow','inset 0 0 5px 2px grey');
 })
 /* event when clicken in buttun , take val() nad give it number  */
 $('#one').on('click',function(){
@@ -132,6 +138,11 @@ $('#period').on('click',function(){
 		$('.result').append($period);
 	}
 });
+
+
+// $('.operator').on('click', function(){
+// 	op = $(this).text();
+// })
 
 /*  Reset action   */
 $('#clear').on('click',function(){

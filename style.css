@@ -5,8 +5,18 @@
      background-size: cover;
      position: relative;
 }
-
-
+/*nav bar*/
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    display: block;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
 /*  flexibal box for Calculators by column  */
  .calculator {
 	display: flex;
@@ -23,7 +33,7 @@
  #fixed-result{
 	width : 520px;
 	height: 100px;
-	background-color: white;
+	background-color: rgb(35, 34, 34);
 	border: 1px solid; 
 	border-radius: 20px;
  }
@@ -48,8 +58,8 @@
 
 /*  button style for operaters  */
 .operater {
-	color: #f41212;
-	font-size: 60px;
+	color: #f48512;
+    font-size: 60px;
 
  }
 /*  resulting box of mathic  */
@@ -57,8 +67,9 @@
 	margin-top: 5px; 
 	width : 200px;
 	background-color: #FFFFFF00;
-	color: black;
-	font-size: 40px;
+	color: white;
+    font-family: monospace;
+    font-size: 45px;
 	padding-left: 15px;
     padding-top: 10px;
 	border-style: 1px solid #0075F2;
