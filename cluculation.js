@@ -5,20 +5,21 @@ var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var number1;
 var number2;
 var op;
-var switche = false;
+var switche = false; // switch between 
 $(document).ready(function() {  
-
+// design for fade .. 
 $('button').on('click', function(){
 	$(this).fadeOut(100).fadeIn(120);
 })
+/* event when clicken in buttun , take val() nad give it number  */
 $('#one').on('click',function(){
 	var $one = $('#one').val();
 	$one = numbers[1];
 	$('.result').append($one);
-	if(switche === true){
-		$('.result').text('');
-		switche = false;
-		$('.result').append($one);
+	  if(switche === true){
+		  $('.result').text('');
+		  switche = false;
+		  $('.result').append($one);
 	}
 });
 
@@ -123,7 +124,7 @@ $('#zero').on('click',function(){
 
 $('#period').on('click',function(){
 	// var $period = $('#period').val();
-	$period = $('#period').text();
+	$period = $('#period').text(); // *** 
 	$('.result').append($period);
 	if(switche === true){
 		$('.result').text('');
@@ -132,6 +133,7 @@ $('#period').on('click',function(){
 	}
 });
 
+/*  Reset action   */
 $('#clear').on('click',function(){
 	$('.result').text('');
 
@@ -216,10 +218,5 @@ $('#divid').on('click',function(){
      }
       $('.result').text(total)
      });
-     
-
-
-
- 
 
 });
